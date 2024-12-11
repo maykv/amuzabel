@@ -22,21 +22,3 @@ function tobedetermined() {
       closeTBDpopup();
     }
   });
-
-  // 팝업 열기
-function openPopup() {
-    document.getElementById('popupOverlay').style.display = 'flex';
-  }
-  
-  // 팝업 닫기
-  function closePopup() {
-    document.getElementById('popupOverlay').style.display = 'none';
-  }
-  
-  // 마우스 외부 클릭 감지
-  document.getElementById('popupOverlay').addEventListener('click', function (e) {
-    if (e.target === this) {
-      closePopup();
-    }
-  });
-  
