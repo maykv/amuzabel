@@ -1,0 +1,181 @@
+/* 폰트 정의 */
+@font-face {
+    font-family: 'Rota';
+    src: url('Rota-ExtraBold.woff2') format('woff2'),
+         url('Rota-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .logo {
+    font-family: 'Rota';
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.logo a{
+    color: white;
+    text-decoration: none;
+}
+
+/* 네비게이션 바 스타일 */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* 기본 스타일 초기화 */
+body {
+  margin: 0;
+  font-family: 'Pretendard-Regular', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* 아티스트 상세 영역 */
+.artist-detail {
+  padding: 2rem;
+}
+
+/* 사진 영역 & 프로필 영역 */
+.photo-profile-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.photo-section {
+  flex: 1;
+  text-align: center;
+}
+
+.profile-section {
+  flex: 2;
+  padding: 0.5rem;
+}
+
+.artist-photo {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* SNS 영역 */
+.sns-icons {
+  margin-top: 1rem;
+}
+
+.sns-icons a {
+  color: #333;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+/* 음악 영역 */
+.music-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.category {
+  flex: 1;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 0 0.5rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+/* 대표곡 & 앨범 스타일 - a 요소 적용 */
+.music-section .category a {
+    display: block; /* li와 비슷한 블록 형태 유지 */
+    color: black;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    margin-bottom: 0.5rem; /* 간격 추가 */
+  }
+  
+  .music-section .category a:hover {
+    transform: scale(1.1);
+    color: black;
+  }
+
+  
+.category h3 {
+  margin-bottom: 0.5rem;
+}
+
+/* 푸터 스타일링 */
+footer {
+  text-align: center;
+  color: #555;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+  /* SNS 아이콘 고정 크기 및 하얀색 */
+.sns-icons {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+  }
+  
+.sns-icon {
+    width: 30px; /* 고정된 너비 */
+    height: 30px; /* 고정된 높이 */
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    background-color: white; /* SVG 내부 색상 */
+}
+  
+.sns-icon:hover {
+    transform: scale(1.1);
+}
+  
