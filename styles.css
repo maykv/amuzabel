@@ -1,8 +1,8 @@
 /* 폰트 정의 */
 @font-face {
     font-family: 'Rota';
-    src: url('Rota-ExtraBold.woff2') format('woff2'),
-         url('Rota-ExtraBold.woff') format('woff');
+    src: url('./font/Rota-ExtraBold.woff2') format('woff2'),
+         url('./font/Rota-ExtraBold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
