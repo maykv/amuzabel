@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Easter Egg</title>
+  <style>
+    @font-face {
+      font-family: 'Freesentation-5Medium';
+      src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-5Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    /* 기본 스타일 */
+    body {
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      font-family: 'Freesentation-5Medium', sans-serif;
+      color: white;
+      text-align: center;
+      transition: background-color 0.5s ease; /* 배경 전환 애니메이션 */
+    }
+
+    h1 {
+      font-size: 2.5em;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const signal = urlParams.get("signal");
+
+    // 신호와 색상 및 메시지 매핑
+    const signals = {
+      reveluv: {
+        color: "#fea38b",
+        message: "<h2>Red Velvet 영원하자!<h2><br><p>당신도 우리 ReVeLuv에 가입하십시오!</p>"
+      },
+      smdreas: {
+        color: "#808080",
+        message: "<h2>$M DREAS</h2><br><p>Bang Pleekybang</p>"
+      },
+      mailyday: {
+        color: "lime",
+        message: "<h2>Maily Day</h2><br><p>It's about <b>mayk</b></p>"
+      },
+      leehi: {
+        color: "#d9c3cb",
+        message: `<h2>LeeHi</h2><br><p>내 무거운 한숨....</p><br><iframe width="240" height="315" src="https://www.youtube.com/embed/qIJZXqdhuSc?si=lWt3csvDfiNOrIdp&amp;autoplay=1&" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+      },
+      may102010: {
+        color: "#b7ff00",
+        message: "<h2>May 10, 2010</h2><br><p>기억해야 할 순간</p>"
+      }
+    };
+
+    // 배경색 및 메시지 처리
+    if (signal && signals[signal]) {
+      const { color, message } = signals[signal];
+      document.body.style.backgroundColor = color;
+      document.body.innerHTML = message; // 메시지를 innerHTML로 출력
+    } else {
+      // 기본 상태: 메시지가 없으면 fallback 처리
+      document.body.style.backgroundColor = "#232323";
+      document.body.innerHTML = "<h1>알 수 없는 신호입니다</h1>";
+    }
+  </script>
+</body>
+</html>

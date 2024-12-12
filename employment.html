@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>채용 및 오디션 - AMUZABEL</title>
+  <link rel="stylesheet" href="empl.css">
+</head>
+
+<body>
+    <!-- 네비게이션 바 -->
+    <header class="navbar">
+        <div class="logo"><a href="index.html">AMUZABEL</a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html#artists">아티스트</a></li>
+                <li><a href="index.html#albums">앨범</a></li>
+                <li><a href="index.html#about">소개</a></li>
+                <li><a href="employment.html">채용</a></li>
+                <li><a href="audition.html">오디션</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <!-- 메인 콘텐츠 영역 -->
+  <main>
+    <section class="hero-section">
+      <h1>Join to AMUZABEL</h1>
+      <p>AMUZABEL이 당신의 꿈과 열정을 함께합니다.<br>AMUZABEL과 함께 당신의 커리어를 만들어내세요.</p>
+    </section>
+
+    <!-- 채용 공고 테이블 영역 -->
+    <section class="content-section">
+      <h2>채용 공고</h2>
+      <p>현재 회사에서 모집 중인 다양한 기회들을 확인하세요.</p>
+      <div class="job-table-container">
+        <table class="job-table">
+          <thead>
+            <tr>
+              <th>No.</th>
+              <th>제목</th>
+              <th>채용 직종</th>
+              <th>날짜</th>
+              <th>현재 상태</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>콘텐츠 디자이너 모집</td>
+              <td>디자인</td>
+              <td>2023-12-01</td>
+              <td>모집 중</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>음악 프로듀서 채용</td>
+              <td>음악</td>
+              <td>2023-12-03</td>
+              <td>모집 중</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>마케팅 매니저 채용</td>
+              <td>마케팅</td>
+              <td>2023-12-10</td>
+              <td><span style="color:lime;"><b>완료</b></span></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>기획자 채용</td>
+              <td>기획</td>
+              <td>2023-11-20</td>
+              <td><span style="color:purple;"><b>조기 종료</b></span></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>웹 개발자 모집</td>
+              <td>개발</td>
+              <td>2023-12-05</td>
+              <td><span style="color:darkred;"><b>취소</b></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- 푸터 영역 -->
+  <footer>
+    &copy; 2024 AMUZABEL
+  </footer>
+
+  <script>
+    let slideIndex = 0;
+
+    function showSlides() {
+      const slides = document.querySelectorAll(".slides");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000); // 3초 후에 슬라이드 이동
+    }
+
+    showSlides();
+  </script>
+</body>
+
+</html>

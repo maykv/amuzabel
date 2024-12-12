@@ -1,0 +1,130 @@
+/* 폰트 정의 */
+@font-face {
+    font-family: 'Rota';
+    src: url('./font/Rota-ExtraBold.woff2') format('woff2'),
+         url('./font/Rota-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 기본 스타일 초기화 */
+body {
+    margin: 0;
+    font-family: 'Pretendard-Regular', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.logo {
+    font-family: 'Rota';
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.logo a{
+    color: white;
+    text-decoration: none;
+}
+
+/* 네비게이션 바 스타일 */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+  
+  /* 메인 콘텐츠 스타일링 */
+  .hero-section {
+    padding: 4rem;
+    text-align: center;
+    background: linear-gradient(to right, #333, #555);
+    color: white;
+    border-bottom: 3px solid #f39c12;
+  }
+  
+  .content-section {
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 800px;
+  }
+  
+  /* 푸터 스타일링 */
+  footer {
+    text-align: center;
+    color: #555;
+    padding: 1rem;
+    margin-top: 3rem;
+  }
+  
+  /* 테이블 컨테이너 스타일 */
+.job-table-container {
+    margin: 2rem auto;
+    max-width: 900px;
+    overflow-x: auto;
+  }
+  
+  /* 테이블 기본 스타일 */
+  .job-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 2rem;
+  }
+  
+  /* 헤더 스타일링 */
+  .job-table thead th {
+    background-color: #333;
+    color: white;
+    padding: 0.8rem 1rem;
+    border: 1px solid #333;
+  }
+  
+  /* 테이블 데이터 스타일링 */
+  .job-table tbody tr {
+    border-bottom: 2px solid #333;
+  }
+  
+  /* 위아래만 border 적용 */
+  .job-table tbody tr:first-child {
+    border-top: 2px solid #333;
+  }
+  
+  .job-table tbody tr:last-child {
+    border-bottom: 2px solid #333;
+  }
+  
+  /* 테이블 데이터 스타일 */
+  .job-table td {
+    padding: 0.8rem 1rem;
+  }
+  
+  /* 마우스 오버 시 스타일 */
+  .job-table tbody tr:hover {
+    background-color: #f2f2f2;
+  }
+  
+  

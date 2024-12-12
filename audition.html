@@ -4,50 +4,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>채용 및 오디션 - AMUZABEL</title>
-  <link rel="stylesheet" href="audition.css">
+  <title>AMUZABEL - 오디션 정보</title>
+  <link rel="stylesheet" href="audt.css">
+  <link rel="stylesheet" href="https://unpkg.com/98.css">
 </head>
 
 <body>
-    <!-- 네비게이션 바 -->
-    <header class="navbar">
-        <div class="logo"><a href="index.html">AMUZABEL</a></div>
-        <nav>
-            <ul>
-                <li><a href="index.html#artists">아티스트</a></li>
-                <li><a href="index.html#albums">앨범</a></li>
-                <li><a href="index.html#about">소개</a></li>
-                <li><a href="./audition.html">채용</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- 컨테이너 -->
+  <div class="container">
+    <!-- 회전하는 CD 이미지 영역 -->
+    <div class="cd-wrapper">
+      <div class="cd" onclick="openWindow()">
+        <img src="./images/waitingcd.png" alt="CD">
+      </div>
+    </div>
 
-  <!-- 메인 콘텐츠 영역 -->
-  <main>
-    <section class="hero-section">
-      <h1>Join to AMUZABEL</h1>
-      <p>AMUZABEL이 당신의 꿈과 열정을 함께합니다.<br>AMUZABEL과 함께 당신의 커리어를 만들어내세요.</p>
-    </section>
+    <!-- Y2K 스타일 창 컨테이너 -->
+    <div class="y2k-window">
+      <div class="window-header">
+        <span class="window-title">AMUZABEL AUDITION</span>
+        <button class="close-btn" onclick="closeWindow()">✖</button>
+      </div>
+      <div class="window-content">
+        <p>AMUZABEL은 새로운 가능성을 추구하며, 당신의 꿈과 함께합니다.</p>
+        <p>오디션 지원 링크와 지원 마감일 등 다양한 정보를 확인하세요.</p>
+        <h3>오디션 문의</h3>
+        <p>E-mail: amuzabel.cd@gmail.com</p>
+        <p>전화: +82 10-XXXX-XXXX</p>
+      </div>
+    </div>
+  </div>
 
-    <section class="content-section">
-      <h2>채용 공고</h2>
-      <p>현재 회사에서 모집 중인 다양한 기회들을 확인하세요.</p>
-
-      <p><small>음…. 아직까지는 채용 정보가 없는 것 같네요.</small></p>
-    </section>
-
-    <section class="content-section">
-      <h2>오디션</h2>
-      <p>당신의 재능을 마음껏 펼칠 수 있는 기회를 확인하세요.</p>
-
-      <p><small>슬프게도 아직까지는 오디션이 준비되지 않았어요.</small></p>
-    </section>
-  </main>
-
-  <!-- 푸터 영역 -->
-  <footer>
-    &copy; 2024 AMUZABEL
-  </footer>
+  <script src="audt.js"></script>
 </body>
 
 </html>
